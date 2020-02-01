@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>New York Times</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron" style="background-color: #47A8BD ; color: white;">
+      <h1 class="text-center">New York Times Search</h1>
+      </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+          <br>
+          <div class="card">
+            <div class="card-header"style="background-color: #47A8BD ; color: white;"><i class="fa fa-book" aria-hidden="true"></i> Search Parameters</div>
+            <div class="card-body">
+              <form role="form" id="form">
+                <div class="parameters">
+                  <label for="search">Search Term:</label>
+                  <input type="text" class="forms" id="searchterm">
+                </div>
+  
+                <div class="parameters">
+                  <label for="pwd">Number of Records to Retrieve:</label>
+                      <select class="1-10" id="numrecs"></select>
+                  </select>
+                </div>
+  
+                <div class="parameters">
+                  <label for="startyear">Start Year (Optional):</label>
+                  <input type="date" class="forms" id="startyear">
+                </div>
+  
+                <div class="parameters">
+                  <label for="endyear">End Year (Optional):</label>
+                  <input type="date" class="forms" id="endyear">
+                </div>
+  
+                <button type="submit"  class="btn btn-default" id="search"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+                <button class="btn btn-default" id="clear"><i class="fa fa-trash" aria-hidden="true"></i> Clear Results</button>
+  
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+            <br>
+          <div class="card">
+  
+            <div class="card-header"style="background-color: #47A8BD ; color: white;"><i class="fa fa-book" aria-hidden="true"></i> Top Articles</div>
+            <div class="card-body" id="articles">
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+      <script src="script.js"></script>
+
+    </body>
+    </html>
